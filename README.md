@@ -1,12 +1,15 @@
+```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force
 .\install-splunk-forwarder-windows-dc.ps1 -MsiPath C:\Temp\splunkforwarder.msi
-
+```
+```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force
 .\install-splunk-forwarder-windows-iis.ps1 -MsiPath C:\Temp\splunkforwarder.msi
-
+```
+```bash
 chmod +x install-splunk-forwarder-linux-haproxy.sh
 ./install-splunk-forwarder-linux-haproxy.sh
-
+```
 
 DC01 192.168.90.10         -> Splunk 192.168.90.20 TCP/9997
 WEB01 192.168.70.10        -> Splunk 192.168.90.20 TCP/9997
